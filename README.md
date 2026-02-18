@@ -113,15 +113,4 @@ MIT - Free for learning/work!
 ## 👨‍💼 Demo Script
 **3-min flow:** Clone → `.env` → Docker → `/docs` → Graph appears!
 
----
 
-**Built for data engineers** | [Issues?](https://github.com/DataEngineer/Apple_Stock_Data_App/issues) 🚀
-```
-
-**To use:**
-1. Copy this entire code block
-2. VSCode: Create `README.md` in `Apple_Stock_Data_App` folder
-3. Paste → Save
-4. `git add README.md && git commit -m "Clean professional README" && git push`
-
-**✅ Clean, professional, GitHub-ready!** No merge conflicts, perfect rendering. 🚀
