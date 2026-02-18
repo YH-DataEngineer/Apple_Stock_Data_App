@@ -19,10 +19,36 @@
 | **Port** | 8000 free locally |
 | **Git** | For cloning |
 
-> **No Python/MySQL needed** - everything containerized! ✅
 
-## 🔧 MySQL Setup
-Create `.env` file in project root:
+## 🔧 MySQL Setup (External - You Provide)
+
+**Your own MySQL server required** (Local/Cloud):
+## 🗄️ MySQL Setup (REQUIRED - External)
+
+**Your own MySQL server needed** (Local/Cloud like AWS ,AZURE, GCP):
+
+### 1. Create Database + Table
+```sql
+CREATE DATABASE aapl_stocks;
+USE aapl_stocks;
+
+CREATE TABLE stock_data (
+    timestamp BIGINT PRIMARY KEY,
+    date DATE,
+    open DECIMAL(10,4),
+    high DECIMAL(10,4),
+    low DECIMAL(10,4),
+    close DECIMAL(10,4),
+    volume BIGINT,
+    symbol VARCHAR(10),
+    currency VARCHAR(3),
+    previous_close DECIMAL(10,4),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+### **2. Configure Connection.env file:**
+
+In the app folder create `.env` file in project root:
 
 ```bash
 # .env (create + edit passwords)
@@ -33,6 +59,7 @@ MYSQL_PASSWORD=your_secure_password
 MYSQL_DATABASE=aapl_stocks
 MYSQL_ROOT_PASSWORD=your_secure_password
 ```
+
 
 **Quick setup:**
 ```bash
