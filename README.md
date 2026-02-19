@@ -32,12 +32,12 @@ Dockerized **FastAPI app** that fetches real-time **Apple (AAPL) stock data**, p
 - ✅ **FastAPI endpoints** serve date-range queries with interactive graphs
 - ✅ **Docker container** runs anywhere with one command
 - ✅ **Secure CORS** prevents malicious access
+- ✅ **No overwrites** Timestamped files (`apple_stock_20260217_1600.json`)
 
 ## ⚠️ What needs improving 
 
 **Current limitations:**
-- ❌ **Single JSON overwrite** (no historical audit trail)
-  - *Fix:* Timestamped files (`apple_stock_20260217_1600.json`)
+- ❌ **JSON bloat** (Adds to diskspace)
 - ❌ **Manual ETL trigger** (no scheduler)
 - ❌ **MySQL external** (requires user setup)
 
