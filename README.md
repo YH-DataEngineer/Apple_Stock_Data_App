@@ -1,7 +1,7 @@
 
 # Apple_Stock_Data_App
 
-**AAPL Stock API** is a Dockerized FastAPI app that fetches real-time Apple stock data, processes it through an ETL pipeline into MySQL, and serves interactive graph endpoints. Users query date ranges via Swagger UI to visualize stock trends with **zero local setup**!
+Dockerized FastAPI app that fetches real-time Apple stock data, processes it through an ETL pipeline into MySQL, and serves interactive graph endpoints. Users query date ranges via Swagger UI to visualize stock trends with **zero local setup**!
 
 [![Docker Ready](https://img.shields.io/badge/Docker-Ready-blue)](https://hub.docker.com/) [![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen)](https://github.com/DataEngineer/Apple_Stock_Data_App/actions)
 
