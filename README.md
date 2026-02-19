@@ -12,6 +12,16 @@
 - 📈 Interactive graphs via web interface
 - 🚀 One-command Docker deployment
 
+## 🏗️ Architecture
+
+- **Data Source Layer** – External stock market API providing raw AAPL price and volume data  
+- **Ingestion & ETL Layer** – Python ETL jobs extract JSON data, transform it (cleaning, type casting, feature columns), and load it into the MySQL database  
+- **Database Layer (MySQL)** – Stores historical AAPL stock data in a structured schema optimized for time‑series and date‑range queries  
+- **API Layer (FastAPI)** – Exposes REST endpoints for querying stock data by date range and other filters, returning JSON responses consumed by the frontend or tools  
+- **Visualization Layer** – Uses API responses to render interactive graphs so users can explore stock trends visually  
+- **Containerization Layer (Docker)** – Packages the FastAPI app (and optional ETL tooling) into a Docker image for consistent, portable deployment with a single run command  
+
+
 ## 📋 Prerequisites
 | Requirement | Details |
 |-------------|---------|
