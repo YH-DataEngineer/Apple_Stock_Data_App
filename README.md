@@ -48,7 +48,7 @@ Dockerized **FastAPI app** that fetches real-time **Apple (AAPL) stock data**, p
 | [Docker](https://docker.com) | Desktop (Win/Mac) or Engine (Linux) |
 | Port | 8000 free locally |
 | [Git](https://git-scm.com) | For cloning |
-| **MySQL** | Local or cloud (AWS RDS, Azure SQL, etc.) |
+| [MYSQL](https://www.mysql.com)| Local or cloud (AWS RDS, Azure SQL, etc.) |
 
 ## 🔧 MySQL Setup (External - You Provide)
 
@@ -150,7 +150,7 @@ uvicorn main:app --reload
 
 ## 📄 License
 
-MIT - Free for learning/work!
+Creative commons license - Free for learning/work!
 
 ---
 
