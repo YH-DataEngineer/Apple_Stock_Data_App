@@ -33,7 +33,7 @@ Dockerized **FastAPI app** that fetches real-time **Apple (AAPL) stock data**, p
 - ✅ **Docker container** runs anywhere with one command
 - ✅ **Secure CORS** prevents malicious access
 
-## ⚠️ What Doesn't Work Well
+## ⚠️ What needs improving 
 
 **Current limitations:**
 - ❌ **Single JSON overwrite** (no historical audit trail)
@@ -88,7 +88,7 @@ MYSQL_PASSWORD=your_secure_password
 MYSQL_DATABASE=aapl_stocks
 ```
 
-**Quick start:** `cp .env.example .env` then edit passwords.
+**Quick start:** `Go to env file` then edit user and password.
 
 ## 🚀 Quick Start (2 Minutes)
 
@@ -115,9 +115,9 @@ uvicorn main:app --reload
 - **Scheduler** (Cron/Airflow) for automated daily ETL
 - **Timestamped JSONs** for full audit trail
 - **Separate DB container** for full local stack
-- **Authentication/JWT** for API security
 - **React dashboard** beyond Swagger UI
 - **CI/CD pipeline** with GitHub Actions
+- **Cloud deployment**
 
 ## 🔧 Troubleshooting
 
