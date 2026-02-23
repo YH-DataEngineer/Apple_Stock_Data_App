@@ -124,7 +124,7 @@ uvicorn main:app --reload
 
 | Problem | Fix |
 |---------|-----|
-| Port 8000 busy | `docker run -p 8080:8000` → `localhost:8080` |
+| Port 8000 busy | `docker run -p 8080:8080` → `localhost:8080` |
 | MySQL connection fails | Check `.env` passwords/host |
 | No response | `docker logs <container-id>` |
 | Build fails | `docker image prune` |
