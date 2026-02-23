@@ -116,7 +116,7 @@ uvicorn main:app --reload
 - **Scheduler** (Cron/Airflow) for automated daily ETL
 - **Timestamped JSONs** for full audit trail
 - **Separate DB container** for full local stack
-- **React dashboard** beyond Swagger UI
+- **Django dashboard**
 - **CI/CD pipeline** with GitHub Actions
 - **Cloud deployment**
 
