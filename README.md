@@ -15,7 +15,7 @@ Dockerized **FastAPI app** that fetches real-time **Apple (AAPL) stock data**, p
 - 📊 **FastAPI endpoints** with date-range filtering
 - 📈 **Interactive graphs** via web interface
 - 🚀 **One-command Docker deployment**
-- 🛡️ **Secure CORS** and production-ready configuration
+  
 
 ## 🏗️ Architecture
 
