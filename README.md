@@ -1,8 +1,12 @@
 # Apple Stock Data App
 
-Dockerized **FastAPI app** that fetches real-time **Apple (AAPL) stock data**, processes it through an **ETL pipeline** into **MySQL**, and serves **interactive graph endpoints**. Users query date ranges via **Swagger UI** to visualize stock trends with **zero local setup**!
+Dockerized **FastAPI app** that fetches real-time **Apple (AAPL) stock data**, processes it through an **ETL pipeline** into **MySQL**, and serves **interactive graph endpoints**.
 
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-Push%20Success-blue)](https://hub.docker.com/) [![GitHub Actions](https://img.shields.io/badge/CI%20/CD-Passing-brightgreen)](https://github.com/YH-DataEngineer/Apple_Stock_Data_App/actions)
+
+
+## ✨ Arch
+<img width="747" height="533" alt="Architecture_v2" src="images/Architecture_v2.png" />
 
 ## ✨ Features
 
