@@ -151,6 +151,5 @@ uvicorn main:app --reload
 
 ---
 
-**⭐ Star if useful! Questions? Open an issue.**
-```
+
 
