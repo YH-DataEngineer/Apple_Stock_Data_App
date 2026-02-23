@@ -24,7 +24,7 @@ Dockerized **FastAPI app** that fetches real-time **Apple (AAPL) stock data**, p
 2. **ETL Layer** – Python jobs: extract JSON, transform (cleaning, validation, features), load to MySQL
 3. **Database** – MySQL schema optimized for time-series queries
 4. **API Layer** – FastAPI REST endpoints for date-range queries
-5. **Visualization** – Swagger UI + graph rendering
+5. **Visualization** – Graph rendering
 6. **Containerization** – Docker for portable deployment
 
 ## ✅ What Works Well
