@@ -103,8 +103,6 @@ docker build -t apple-stock-api .
 docker run --env-file .env -p 8000:8000 apple-stock-api
 ```
 
-✅ **Open:** [http://localhost:8000/docs](http://localhost:8000/docs)
-
 ## 🛠️ Local Dev (Optional)
 
 ```bash
