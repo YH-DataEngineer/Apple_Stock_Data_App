@@ -149,10 +149,6 @@ uvicorn main:app --reload
 2. `git checkout -b feature/add-symbol`
 3. Commit + PR
 
-## 📄 License
-
-Creative commons license - Free for learning/work!
-
 ---
 
 **⭐ Star if useful! Questions? Open an issue.**
