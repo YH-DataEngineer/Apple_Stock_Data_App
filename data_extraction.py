@@ -65,8 +65,7 @@ def get_apple_stock():
 
     # Write COMPLETE raw response to file (not just result/meta)
     # Overwrites file each run - add timestamp to filename if you want history
-    '''with open("apple_stock.json", "w") as f:
-        json.dump(data, f, indent=4)'''
+    # with open("apple_stock.json", "w") as f: json.dump(data, f, indent=4)'''
     
 
     # this code replace overwrite file for production -- Every run preserved , easy rollback, 
@@ -82,9 +81,9 @@ def get_apple_stock():
     
     # Success confirmation for user
     print("Saved successfully!")
-    return data
+    return filename
 
 
-# Standard Python idiom - makes script executable when run directly
+# Standard Python idiom - makes script executable when run directly running this seperately but in production not required as we are ruunning in tranformation layer 
 if __name__ == "__main__":
     get_apple_stock()
