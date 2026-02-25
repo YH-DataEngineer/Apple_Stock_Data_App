@@ -8,13 +8,11 @@ on:
 
 permissions:
   contents: read
-  packages: write  # ← This grants package write access
+  packages: write  # Grants package write access for entire workflow
 
 jobs:
   build-test:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
 
     steps:
       - name: Checkout code
@@ -38,14 +36,10 @@ jobs:
     if: github.event_name == 'push'
     needs: build-test
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write  # ← Explicit per-job permission
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        permissions: write-all
 
       - name: Convert repository name to lowercase
         run: echo "REPO_SLUG=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
