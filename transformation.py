@@ -3,6 +3,7 @@ import json
 from datetime import datetime
 import os
 from dotenv import load_dotenv
+from data_extraction import get_apple_stock 
 
 load_dotenv()  # Load .env file FIRST
 
@@ -108,11 +109,12 @@ if __name__ == "__main__":
     conn = cursor = None
     
     try:
+        filename=get_apple_stock()
         # 1. Connect + validate
         conn, cursor, columns = connect_to_existing_db()
         
         # 2. Load JSON
-        with open("apple_stock.json", "r") as f:
+        with open(filename, "r") as f:
             json_data = json.load(f)
         
         rows = transform_json_to_relational(json_data)
