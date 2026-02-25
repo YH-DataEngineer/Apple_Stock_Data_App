@@ -6,9 +6,15 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+  packages: write  # ← This grants package write access
+
 jobs:
   build-test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout code
@@ -28,15 +34,18 @@ jobs:
         run: |
           if [ -f pytest.ini ] || [ -d tests ]; then pytest; else echo "No tests configured"; fi
 
-  # Optional: build and push Docker image on push to main
   docker-deploy:
     if: github.event_name == 'push'
     needs: build-test
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write  # ← Explicit per-job permission
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        permissions: write-all
 
       - name: Convert repository name to lowercase
         run: echo "REPO_SLUG=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
