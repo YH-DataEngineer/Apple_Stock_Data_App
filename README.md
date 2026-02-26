@@ -6,7 +6,7 @@ Dockerized **FastAPI app** that fetches real-time **Apple (AAPL) stock data**, p
 
 
 ## ✨ Arch
-<img width="747" height="533" alt="Architecture" src="images/Architecture.png" />
+<img width="747" height="533" alt="Architecture" src="images/architecture_2.jpeg" />
 
 ## ✨ Features
 
