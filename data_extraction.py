@@ -87,3 +87,5 @@ def get_apple_stock():
 # Standard Python idiom - makes script executable when run directly running this seperately but in production not required as we are ruunning in tranformation layer 
 if __name__ == "__main__":
     get_apple_stock()
+
+print("helloworld")
